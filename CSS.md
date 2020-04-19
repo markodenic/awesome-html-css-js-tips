@@ -4,6 +4,7 @@
 
 - [Cursors](#cursors)
 - [Smooth Scrolling](#smooth-scroll)
+- [Truncate text](#truncate-text)
 
 ## Cursors
 
@@ -29,9 +30,9 @@ html {
 
 [Link to Codepen](https://codepen.io/denic/pen/bGVeYqN)
 
-## Truncate text with plain CSS
+## Truncate text
 
-DId you know that you can truncate text with plain CSS?
+Did you know that you can truncate text with plain CSS?
 
 ```css
 .overflow-truncate {
