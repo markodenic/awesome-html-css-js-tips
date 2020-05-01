@@ -4,7 +4,7 @@
 
 - [Shorten an array](#shorten-an-array)
 - [Short-circuits conditionals](#short-circuits-conditionals)
-- [Assigning the remaining part of an array](#assigning-the-remaining-part-of an-array)
+- [Assigning the remaining part of an array](#assigning-the-remaining-part-of-an-array)
 
 ## Shorten an array
 
