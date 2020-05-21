@@ -6,6 +6,7 @@
 - [Smooth Scrolling](#smooth-scroll)
 - [Truncate Text](#truncate-text)
 - [Truncate Text To The Specific Number Of Lines](#truncate-text-to-the-specific-number-of-lines)
+- [Calc Function](#calc-function)
 
 ## Cursors
 
@@ -57,6 +58,16 @@ You can use `-webkit-line-clamp` property to truncate the text to the specific n
 ```
 
 [Link to Codepen](https://codepen.io/denic/pen/pojEKGX)
+
+## Calc Function
+
+The `calc()` CSS function lets you perform calculations when specifying CSS property values.
+
+```css
+div {
+    width: calc(100% - 30px);
+}
+```
 
 [awesome-badge]: https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
 
