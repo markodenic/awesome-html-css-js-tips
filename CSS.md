@@ -7,6 +7,7 @@
 - [Truncate Text](#truncate-text)
 - [Truncate Text To The Specific Number Of Lines](#truncate-text-to-the-specific-number-of-lines)
 - [Calc Function](#calc-function)
+- [CSS-only modals](#css-only-modals)
 
 ## Cursors
 
@@ -68,6 +69,26 @@ div {
     width: calc(100% - 30px);
 }
 ```
+
+## CSS-only modals
+
+You can use the :target pseudo-class to create modals with zero JavaScript.
+
+```css
+.modal {
+    visibility: hidden;
+}
+
+/*
+    Selects an element with an id matching the current URL's fragment
+    Example: example.com#demo-modal
+*/
+.modal:target {
+    visibility: visible;
+}
+```
+
+[Link to Codepen](https://codepen.io/denic/pen/ZEbKgPp)
 
 [awesome-badge]: https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
 
