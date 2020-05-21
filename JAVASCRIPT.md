@@ -7,6 +7,7 @@
 - [Assigning the remaining part of an array](#assigning-the-remaining-part-of-an-array)
 - [Object property assigning to a variable with a different name](#object-property-assigning-to-a-variable-with-a-different-name)
 - [Select a subset of columns to display when doing console.table()](#select-a-subset-of-columns-to-display-when-doing-consoletable)
+- [Remove duplicate elements from the array](#remove-duplicate-elements-from-the-array)
 
 ## Shorten an array
 
@@ -70,6 +71,13 @@ const john = new Person("John", "Smith");
 const jane = new Person("Jane", "Doe");
 
 console.table([john, jane], ["firstName"]);
+```
+
+## Remove duplicate elements from the array
+
+```javascript
+const myArray = [5, 4, 3, 'a', 5, 5, 'a'];
+console.log([... new Set(myArray)]); // [5, 4, 3, "a"]
 ```
 
 [awesome-badge]: https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
