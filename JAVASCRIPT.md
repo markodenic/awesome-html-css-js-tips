@@ -5,6 +5,7 @@
 - [Shorten an array](#shorten-an-array)
 - [Short-circuits conditionals](#short-circuits-conditionals)
 - [Assigning the remaining part of an array](#assigning-the-remaining-part-of-an-array)
+- [Object property assigning to a variable with a different name](#object-property-assigning-to-a-variable-with-a-different-name)
 
 ## Shorten an array
 
@@ -40,6 +41,17 @@ When destructuring an array, you can unpack and assign the remaining part of it 
 const [a, ...b] = [1, 2, 3, 4, 5];
 console.log(a); // 1
 console.log(b); // [2, 3, 4, 5]
+```
+
+## Object property assigning to a variable with a different name
+
+A property can be unpacked from an object and assigned to a variable with a different name than the object property:
+
+```javascript
+const obj = {a: 42, b: true};
+const {a: foo, b: bar} = obj;
+console.log(foo); // 42
+console.log(bar); // true
 ```
 
 [awesome-badge]: https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
