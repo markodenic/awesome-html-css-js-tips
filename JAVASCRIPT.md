@@ -6,6 +6,7 @@
 - [Short-circuits conditionals](#short-circuits-conditionals)
 - [Assigning the remaining part of an array](#assigning-the-remaining-part-of-an-array)
 - [Object property assigning to a variable with a different name](#object-property-assigning-to-a-variable-with-a-different-name)
+- [Select a subset of columns to display when doing console.table()](#select-a-subset-of-columns-to-display-when-doing-consoletable)
 
 ## Shorten an array
 
@@ -52,6 +53,23 @@ const obj = {a: 42, b: true};
 const {a: foo, b: bar} = obj;
 console.log(foo); // 42
 console.log(bar); // true
+```
+
+## Select a subset of columns to display when doing console.table()
+
+By default, `console.table()` lists all elements in each row. You can use the optional "columns" parameter to select a subset of columns to display:
+
+```javascript
+// an array of objects, logging only firstName
+function Person(firstName, lastName) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+}
+
+const john = new Person("John", "Smith");
+const jane = new Person("Jane", "Doe");
+
+console.table([john, jane], ["firstName"]);
 ```
 
 [awesome-badge]: https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
