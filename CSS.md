@@ -104,17 +104,5 @@ Easily center anything, horizontally and vertically, with 3 lines of CSS.
 }
 ```
 
-## Image as a cursor
-
-Did you know that you can use your own image, or even emoji as a cursor?
-
-```css
-.image-cursor {
-    cursor: url('path-to-image.png'), url('path-to-falback-image.png'), auto;
-}
-```
-
-[Link to Codepen](https://codepen.io/denic/pen/bGVpOPj)
-
 [awesome-badge]: https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
 
