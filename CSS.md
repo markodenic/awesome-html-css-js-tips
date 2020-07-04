@@ -9,7 +9,7 @@
 - [Calc Function](#calc-function)
 - [CSS-only modals](#css-only-modals)
 - [Center anything](#center-anything)
-- [Image as a cursor](#image-as-a-cursor)
+- [Sticky sections](#sticky-sections)
 
 ## Cursors
 
@@ -103,6 +103,19 @@ Easily center anything, horizontally and vertically, with 3 lines of CSS.
     justify-content: center;
 }
 ```
+
+## Sticky sections
+
+You can create sticky section headers with 2 lines of CSS.
+
+```css
+.sticky {
+    position: sticky;
+    top: 0;
+}
+```
+
+[Link to Codepen](https://codepen.io/denic/pen/jObYpaP)
 
 [awesome-badge]: https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
 
