@@ -8,6 +8,9 @@
 - [Object property assigning to a variable with a different name](#object-property-assigning-to-a-variable-with-a-different-name)
 - [Select a subset of columns to display when doing console.table()](#select-a-subset-of-columns-to-display-when-doing-consoletable)
 - [Remove duplicate elements from the array](#remove-duplicate-elements-from-the-array)
+- [Remove all falsy values from an array](#remove-all-falsy-values-from-an-array)
+- [Convert a number to string](#convert-a-number-to-string)
+- [Calculate the sum of all elements in array](#calculate-the-sum-of-all-elements-in-array)
 
 ## Shorten an array
 
@@ -78,6 +81,30 @@ console.table([john, jane], ["firstName"]);
 ```javascript
 const myArray = [5, 4, 3, 'a', 5, 5, 'a'];
 console.log([... new Set(myArray)]); // [5, 4, 3, "a"]
+```
+
+## Remove all falsy values from an array
+
+```javascript
+const myArray = [1, undefined, NaN, 2, null, '@denicmarko', true, 3, false];
+console.log(myArray.filter(Boolean)); // [1, 2, '@denicmarko', true, 3]
+```
+
+## Convert a number to string
+
+```javascript
+const number = 403;
+console.log(number + ''); // '403'
+```
+
+## Calculate the sum of all elements in array
+
+You can use `reduce` method to calculate the sum of all elements in array:
+
+```javascript
+const myArray = [10, 20, 30, 40];
+const reducer = (total, currentValue) => total + currentValue;
+console.log(myArray.reduce(reducer)); // 100
 ```
 
 [awesome-badge]: https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg

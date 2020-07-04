@@ -8,6 +8,8 @@
 - [Truncate Text To The Specific Number Of Lines](#truncate-text-to-the-specific-number-of-lines)
 - [Calc Function](#calc-function)
 - [CSS-only modals](#css-only-modals)
+- [Center anything](#center-anything)
+- [Image as a cursor](#image-as-a-cursor)
 
 ## Cursors
 
@@ -89,6 +91,30 @@ You can use the :target pseudo-class to create modals with zero JavaScript.
 ```
 
 [Link to Codepen](https://codepen.io/denic/pen/ZEbKgPp)
+
+## Center anything
+
+Easily center anything, horizontally and vertically, with 3 lines of CSS.
+
+```css
+.parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+```
+
+## Image as a cursor
+
+Did you know that you can use your own image, or even emoji as a cursor?
+
+```css
+.image-cursor {
+    cursor: url('path-to-image.png'), url('path-to-falback-image.png'), auto;
+}
+```
+
+[Link to Codepen](https://codepen.io/denic/pen/bGVpOPj)
 
 [awesome-badge]: https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
 
