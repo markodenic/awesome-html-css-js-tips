@@ -10,7 +10,11 @@
 - [Remove duplicate elements from the array](#remove-duplicate-elements-from-the-array)
 - [Remove all falsy values from an array](#remove-all-falsy-values-from-an-array)
 - [Convert a number to string](#convert-a-number-to-string)
+- [Convert a numberic string to number](#convert-a-numbericString-to-number)
 - [Calculate the sum of all elements in array](#calculate-the-sum-of-all-elements-in-array)
+- [Use back ticks to concatenate strings](#Use-back-ticks-to-concatenate-strings)
+- [Get the max value from a number array](#Get-the-max-value-from-a-number-array)
+- [Tranform array elements using map function](#Tranform-array-elements-using-map-function)
 
 ## Shorten an array
 
@@ -97,6 +101,13 @@ const number = 403;
 console.log(number + ''); // '403'
 ```
 
+## Convert a numberic string to number
+
+```javascript
+const numericString = '403';
+console.log(+numericString); // 403
+```
+
 ## Calculate the sum of all elements in array
 
 You can use `reduce` method to calculate the sum of all elements in array:
@@ -107,5 +118,29 @@ const reducer = (total, currentValue) => total + currentValue;
 console.log(myArray.reduce(reducer)); // 100
 ```
 
-[awesome-badge]: https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
+## Use back ticks to concatenate strings
 
+```javascript
+let name = 'Horse';
+console.log(`The ${name} is sleeping`); // the Horse is sleeping 
+```
+
+## Get the max value from a number array
+
+```javascript
+let arr = [3, 5, 1];
+console.log( Math.max(...arr) ); // 5
+```
+
+## Tranform array elements using map function
+
+ ```javascript
+const y = [1,2,3,4];
+
+console.log(y.map((value)=>value * 2)); // [2, 4, 6, 8]
+
+console.log(y.map((value, index)=>value * index )); // [0, 2, 6, 12] 
+```
+
+
+[awesome-badge]: https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
