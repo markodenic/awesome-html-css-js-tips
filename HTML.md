@@ -6,6 +6,7 @@
 - [Fieldset Element](#fieldset-element)
 - [Window Opener](#window-opener)
 - [Base Element](#base-element)
+- [Details Element](#details-element)
 
 ## HTML Native Search
 
@@ -80,6 +81,26 @@ If you want to open all links in the document in a new tab, you can use <base> e
 ```
 
 [Link to Codepen](https://codepen.io/denic/pen/yLYYwJp)
+
+## Details Element
+
+You can use the `details` element to create native HTML accordion.
+
+```html
+<div class="wrapper">
+  <details>
+    <summary>
+      Click me to see more details
+    </summary>
+
+    <p>
+      More details.
+    </p>
+  </details>
+</div>
+```
+
+[Link to Codepen](https://codepen.io/denic/pen/PozobRO)
 
 [awesome-badge]: https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
 
