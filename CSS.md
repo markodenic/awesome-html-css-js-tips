@@ -10,6 +10,7 @@
 - [CSS-only modals](#css-only-modals)
 - [Center anything](#center-anything)
 - [Sticky sections](#sticky-sections)
+- [:empty selector](#empty-selector)
 
 ## Cursors
 
@@ -116,6 +117,22 @@ You can create sticky section headers with 2 lines of CSS.
 ```
 
 [Link to Codepen](https://codepen.io/denic/pen/jObYpaP)
+
+## `:empty` selector
+
+You can use the `:empty` selector to style an element that has no children or text at all:
+
+```css
+.box {
+  background: #999;
+}
+
+.box:empty {
+  background: #fff;
+}
+```
+
+[Link to Codepen](https://codepen.io/denic/pen/KKMpZdP)
 
 [awesome-badge]: https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
 
