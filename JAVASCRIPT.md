@@ -15,6 +15,7 @@
 - [Use template literals to concatenate strings](#use-template-literals-to-concatenate-strings)
 - [Get the maximum of an array](#get-the-maximum-of-an-array)
 - [Transform the array elements using the map function](#transform-the-array-elements-using-the-map-function)
+- [Convert objects to custom string](#convert-objects-to-custom-string)
 
 ## Shorten an array
 
@@ -35,7 +36,7 @@ If you have to execute a function only if condition is true, you can use short-c
 ```javascript
 // Instead of this
 if (condition) {
-    doSomething();
+  doSomething();
 }
 
 // You can use short-circuit
@@ -57,8 +58,8 @@ console.log(b); // [2, 3, 4, 5]
 A property can be unpacked from an object and assigned to a variable with a different name than the object property:
 
 ```javascript
-const obj = {a: 42, b: true};
-const {a: foo, b: bar} = obj;
+const obj = { a: 42, b: true };
+const { a: foo, b: bar } = obj;
 console.log(foo); // 42
 console.log(bar); // true
 ```
@@ -83,14 +84,14 @@ console.table([john, jane], ["firstName"]);
 ## Remove duplicate elements from the array
 
 ```javascript
-const myArray = [5, 4, 3, 'a', 5, 5, 'a'];
-console.log([... new Set(myArray)]); // [5, 4, 3, "a"]
+const myArray = [5, 4, 3, "a", 5, 5, "a"];
+console.log([...new Set(myArray)]); // [5, 4, 3, "a"]
 ```
 
 ## Remove all falsy values from an array
 
 ```javascript
-const myArray = [1, undefined, NaN, 2, null, '@denicmarko', true, 3, false];
+const myArray = [1, undefined, NaN, 2, null, "@denicmarko", true, 3, false];
 console.log(myArray.filter(Boolean)); // [1, 2, '@denicmarko', true, 3]
 ```
 
@@ -98,14 +99,14 @@ console.log(myArray.filter(Boolean)); // [1, 2, '@denicmarko', true, 3]
 
 ```javascript
 const number = 403;
-console.log(number + ''); // '403'
+console.log(number + ""); // '403'
 ```
 
 ## Convert a numeric string to number
 
 ```javascript
-const numericString = '403';
-console.log(+ numericString); // 403
+const numericString = "403";
+console.log(+numericString); // 403
 ```
 
 ## Calculate the sum of all elements in array
@@ -121,8 +122,8 @@ console.log(myArray.reduce(reducer)); // 100
 ## Use template literals to concatenate strings
 
 ```javascript
-let name = 'Horse';
-console.log(`The ${name} is sleeping`); // the Horse is sleeping 
+let name = "Horse";
+console.log(`The ${name} is sleeping`); // the Horse is sleeping
 ```
 
 ## Get the maximum of an array
@@ -134,10 +135,30 @@ console.log(Math.max(...arr)); // 5
 
 ## Transform the array elements using the map function
 
- ```javascript
-const myArray = [1,2,3,4];
+```javascript
+const myArray = [1, 2, 3, 4];
 
-console.log(myArray.map(value => value * 2)); // [2, 4, 6, 8]
+console.log(myArray.map((value) => value * 2)); // [2, 4, 6, 8]
+```
+
+## Convert objects to custom string
+
+You can typecast an object to a custom string.
+
+```javascript
+const obj = {
+  title: "Frontend developer",
+  exp: 2,
+  lang: "React JS",
+  toString() {
+    return `I am ${this.title} with ${this.exp} years of experience in ${this.lang}`;
+  },
+};
+
+console.log(obj + ""); // I am Frontend developer with 2 years of experience in React JS.
+
+//values are type coerced to string when used with alert.
+alert(obj); // I am Frontend develoer with 2 years of exerience in React JS.
 ```
 
 [awesome-badge]: https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
