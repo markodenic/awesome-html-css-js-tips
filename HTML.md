@@ -15,9 +15,9 @@
   <h1>
     Native HTML Search
   </h1>
-  
+
   <input list="items">
-  
+
   <datalist id="items">
     <option value="Marko Denic">
     <option value="FreeCodeCamp">
@@ -104,3 +104,11 @@ You can use the `details` element to create native HTML accordion.
 
 [awesome-badge]: https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
 
+
+
+## liveReload
+ Heard of VsCode LiveServer Extension? We are going to create something similar to that with a single line of HTML, All you have to do is change the content value to your desired value Example: content = "3000"
+
+```html
+<meta http-equiv="refresh" content="value(seconds)">
+```
