@@ -7,6 +7,7 @@
 - [Window Opener](#window-opener)
 - [Base Element](#base-element)
 - [Details Element](#details-element)
+- [Live Reload](#liveReload)
 
 ## HTML Native Search
 
