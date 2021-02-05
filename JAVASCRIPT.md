@@ -148,7 +148,7 @@ Here, a function is called with the initial `sum` value of zero that returns a f
 ```javascript
 const myArray = [1,1,1,1];
 
-console.log(myArray.map((sum => value => sum += value)(0))); // [1,2,3,4]
+console.log(myArray.map((sum => value => sum += value)(0))); // [1, 2, 3, 4]
 ```
 
 [awesome-badge]: https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
