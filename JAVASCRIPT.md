@@ -15,6 +15,7 @@
 - [Use template literals to concatenate strings](#use-template-literals-to-concatenate-strings)
 - [Get the maximum of an array](#get-the-maximum-of-an-array)
 - [Transform the array elements using the map function](#transform-the-array-elements-using-the-map-function)
+- [Calculate the running sum of an array with currying](#calculate-the-running-sum-of-an-array-with-currying)
 
 ## Shorten an array
 
@@ -138,6 +139,16 @@ console.log(Math.max(...arr)); // 5
 const myArray = [1,2,3,4];
 
 console.log(myArray.map(value => value * 2)); // [2, 4, 6, 8]
+```
+
+## Calculate the running sum of an array with currying
+
+Here, a function is called with the initial `sum` value of zero that returns a function which accumulates the values of `myArray`.
+
+```javascript
+const myArray = [1,1,1,1];
+
+console.log(myArray.map((sum => value => sum += value)(0))); // [1, 2, 3, 4]
 ```
 
 [awesome-badge]: https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
