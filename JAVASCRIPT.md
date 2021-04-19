@@ -16,6 +16,7 @@
 - [Get the maximum of an array](#get-the-maximum-of-an-array)
 - [Transform the array elements using the map function](#transform-the-array-elements-using-the-map-function)
 - [Calculate the running sum of an array with currying](#calculate-the-running-sum-of-an-array-with-currying)
+- [Loop forward and backwards through an Array](#loop-forward-and-backwards-through-an-array)
 
 ## Shorten an array
 
@@ -149,6 +150,25 @@ Here, a function is called with the initial `sum` value of zero that returns a f
 const myArray = [1,1,1,1];
 
 console.log(myArray.map((sum => value => sum += value)(0))); // [1, 2, 3, 4]
+```
+
+## Loop forward and backwards through an Array
+
+```javascript
+const myArray = [1,2,3,4];
+
+// Track the current index
+let currentIndex = 0;
+
+// Navigate through the array
+const next = (arr) => (currentIndex + 1) % arr.length;
+const prev = (arr) => (currentIndex - 1 + arr.length) % arr.length;
+
+// Get the next element 
+currentIndex = next(myArr);
+
+// Get the previous element
+currentIndex = prev(myArr);
 ```
 
 [awesome-badge]: https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
