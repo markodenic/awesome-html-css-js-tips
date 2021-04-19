@@ -153,6 +153,7 @@ console.log(myArray.map((sum => value => sum += value)(0))); // [1, 2, 3, 4]
 ```
 
 ## Loop forward and backwards through an Array
+These two methods are useful when you want to navigate through an array, for example to create a custom slideshow.
 
 ```javascript
 const myArray = [1,2,3,4];
