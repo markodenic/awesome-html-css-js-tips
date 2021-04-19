@@ -16,6 +16,7 @@
 - [Get the maximum of an array](#get-the-maximum-of-an-array)
 - [Transform the array elements using the map function](#transform-the-array-elements-using-the-map-function)
 - [Calculate the running sum of an array with currying](#calculate-the-running-sum-of-an-array-with-currying)
+- [Search a string for the last occurence of specified element](#search-a-string-for-the-last-occurence-of-specified-element)
 
 ## Shorten an array
 
