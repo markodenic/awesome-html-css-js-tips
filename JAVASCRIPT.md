@@ -8,6 +8,7 @@
 - [Object property assigning to a variable with a different name](#object-property-assigning-to-a-variable-with-a-different-name)
 - [Select a subset of columns to display when doing console.table()](#select-a-subset-of-columns-to-display-when-doing-consoletable)
 - [Remove duplicate elements from the array](#remove-duplicate-elements-from-the-array)
+- [Count duplicates of an element in an array](#count-duplicates-of-an-element-in-an-array)
 - [Remove all falsy values from an array](#remove-all-falsy-values-from-an-array)
 - [Convert a number to string](#convert-a-number-to-string)
 - [Convert a numeric string to number](#convert-a-numeric-string-to-number)
@@ -86,6 +87,17 @@ console.table([john, jane], ["firstName"]);
 ```javascript
 const myArray = [5, 4, 3, 'a', 5, 5, 'a'];
 console.log([... new Set(myArray)]); // [5, 4, 3, "a"]
+```
+
+## Count duplicates of an element in an array
+
+```javascript
+function countElements(array, value) {
+	return array.reduce((accumulator, currentNumber) => 
+	(currentNumber === value ? accumulator + 1 : accumulator), 0);
+}
+
+console.log(countElements([1, 1, 2, 1, 2, 3], 1));
 ```
 
 ## Remove all falsy values from an array
