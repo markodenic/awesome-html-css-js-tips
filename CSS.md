@@ -11,14 +11,15 @@
 - [Center anything](#center-anything)
 - [Sticky sections](#sticky-sections)
 - [:empty selector](#empty-selector)
+- [Clamp attribute](#clamp-attribute)
 
 ## Cursors
 
-Did you know that you can use your own image, or even emoji as a cursor? 
+Did you know that you can use your own image, or even emoji as a cursor?
 
 ```css
 div {
-    cursor: url('path-to-image.png'), url('path-to-fallback-image.png'), auto;
+  cursor: url('path-to-image.png'), url('path-to-fallback-image.png'), auto;
 }
 ```
 
@@ -30,7 +31,7 @@ Smooth scrolling without #javascript, with just one line of CSS.
 
 ```css
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 ```
 
@@ -42,7 +43,7 @@ Did you know that you can truncate text with plain CSS?
 
 ```css
 .overflow-truncate {
-    text-overflow: ellipsis;
+  text-overflow: ellipsis;
 }
 ```
 
@@ -54,10 +55,10 @@ You can use `-webkit-line-clamp` property to truncate the text to the specific n
 
 ```css
 .overflow-truncate {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 ```
 
@@ -69,7 +70,7 @@ The `calc()` CSS function lets you perform calculations when specifying CSS prop
 
 ```css
 div {
-    width: calc(100% - 30px);
+  width: calc(100% - 30px);
 }
 ```
 
@@ -79,7 +80,7 @@ You can use the :target pseudo-class to create modals with zero JavaScript.
 
 ```css
 .modal {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 /*
@@ -87,7 +88,7 @@ You can use the :target pseudo-class to create modals with zero JavaScript.
     Example: example.com#demo-modal
 */
 .modal:target {
-    visibility: visible;
+  visibility: visible;
 }
 ```
 
@@ -99,9 +100,9 @@ Easily center anything, horizontally and vertically, with 3 lines of CSS.
 
 ```css
 .parent {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 ```
 
@@ -111,8 +112,8 @@ You can create sticky section headers with 2 lines of CSS.
 
 ```css
 .sticky {
-    position: sticky;
-    top: 0;
+  position: sticky;
+  top: 0;
 }
 ```
 
@@ -134,5 +135,17 @@ You can use the `:empty` selector to style an element that has no children or te
 
 [Link to Codepen](https://codepen.io/denic/pen/KKMpZdP)
 
-[awesome-badge]: https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
+## Clamp attribute
 
+You can easily manage the size of any html element by using the clamp attribute.
+Simply put, clamp allowa you to set a desired size value for your element and specify a minimum value it must not exceed (for small screens) and a max-value that it must not exceed(for large screens) all in one line of css
+
+```css
+.card {
+  width: clamp(200px, 50%, 600px);
+}
+```
+
+[Link to Codepen](https://codepen.io/iyanushow/project/full/XwpaVP)
+
+[awesome-badge]: https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
