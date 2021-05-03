@@ -141,7 +141,7 @@ You can easily manage the size of any html element by using the clamp attribute.
 Simply put, clamp allowa you to set a desired size value for your element and specify a minimum value it must not exceed (for small screens) and a max-value that it must not exceed(for large screens) all in one line of css
 
 ```css
-.card {
+.container {
   width: clamp(200px, 50%, 600px);
 }
 ```
