@@ -16,6 +16,7 @@
 - [Get the maximum of an array](#get-the-maximum-of-an-array)
 - [Transform the array elements using the map function](#transform-the-array-elements-using-the-map-function)
 - [Calculate the running sum of an array with currying](#calculate-the-running-sum-of-an-array-with-currying)
+- [Get the URL port number of a web page](#get-the-url-port-number-of-a-web-page)
 
 ## Shorten an array
 
@@ -151,4 +152,18 @@ const myArray = [1,1,1,1];
 console.log(myArray.map((sum => value => sum += value)(0))); // [1, 2, 3, 4]
 ```
 
+## Get the URL port number of a web page
+
+JavaScript has a built-in `location` API interface that represents the location (URL) of the object it is linked to
+
+```javascript
+// page url: http://localhost:3000
+window.location.port == "3000"
+
+// page url: https://www.w3schools.com:8080/js/default.asp
+window.location.port == "8080"
+
+// page url: https://www.w3schools.com/js/default.asp
+window.location.port == ""
+```
 [awesome-badge]: https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
